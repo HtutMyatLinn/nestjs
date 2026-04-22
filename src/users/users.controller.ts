@@ -1,4 +1,4 @@
-import { Controller, Get, Post } from '@nestjs/common';
+import { Controller, Delete, Get, Post } from '@nestjs/common';
 
 @Controller('users')
 export class UsersController {
@@ -9,5 +9,9 @@ export class UsersController {
   @Post()
   public updateUser() {
     return 'Update User hit';
+  }
+  @Delete()
+  public removeUser() {
+    return 'Remove User hit';
   }
 }
